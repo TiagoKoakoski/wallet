@@ -6,6 +6,7 @@ class CoinsController < ApplicationController
 
   def create
     @coin = Coin.new(params.require(:coin).permit(:currency_id, :quantity, :price))
+    @currency = Currency.all
     if @coin.save
       flash[:notice] = "Moeda registrada com sucesso"
       redirect_to currency_path(@coin.currency_id)

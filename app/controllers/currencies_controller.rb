@@ -10,7 +10,7 @@ class CurrenciesController < ApplicationController
       redirect_to @currency
     else
       flash[:alert] = "Não foi possivel salvar o ativo"
-      render new
+      render :new
     end
   end
 

@@ -4,7 +4,7 @@
 
 O aplicativo tem como objetivo gerenciar os investimentos em ativos, inicialmente critomoedas, porém com a perspectiva de adicionar novas funcionalidades.
 
-O software utiliza a tecnologia Ruby on Rails
+O software utiliza a tecnologia Ruby on Rails. E é desenvolvido utilizando TDD.
 
 ## Ruby version 
 ```

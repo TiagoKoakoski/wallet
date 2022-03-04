@@ -1,5 +1,6 @@
 class Currency < ApplicationRecord
   has_many :coins
+  validates :name, :code, presence: true
 
   def quantity_total
     quantity_total = 0
