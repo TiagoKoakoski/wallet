@@ -1,0 +1,21 @@
+<%= form_with model: @coin do |f| %>
+  <div>
+    <%= f.label :currency_id, 'Ativo' %>
+    <%= f.collection_select(:currency_id, @currency, :id, :code) %>
+  </div>
+
+  <div>
+    <%= f.label :quantity, 'Quantidade' %>
+    <%= f.number_field :quantity %>
+  </div>
+
+  <div>
+    <%= f.label :price, 'Preço' %>
+    <%= f.number_field :price%>
+  </div>
+
+  <div>
+    <%= f.submit 'Salvar' %>
+  </div>
+
+<% end %>

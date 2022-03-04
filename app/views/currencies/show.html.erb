@@ -1,0 +1,6 @@
+<h2><%= @currency.name %> - <%= @currency.code %> </h2>
+
+<% @currency.coins.each do |c| %>
+  <%= c.quantity %> - <%= c.price %> - $ <%= c.total %>
+
+<% end %>

@@ -1,0 +1,16 @@
+<%= form_with model: @currency do |f| %>
+  <div>
+    <%= f.label :name, 'Nome'%>
+    <%= f.text_field :name, placeholder:"Nome aqui" %>
+  </div>
+
+  <div>
+    <%= f.label :code, 'Código do ativo'%>
+    <%= f.text_field :code %>
+  </div>
+
+  <div>
+    <%= f.submit 'Salvar' %>
+  </div>
+
+  <%end%>

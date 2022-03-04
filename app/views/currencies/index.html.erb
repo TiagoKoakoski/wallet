@@ -1,0 +1,28 @@
+<h2>Ativos:</h2>
+
+<% if @currencies.empty? %>
+  Nenhum ativo cadastrado
+<% else %>
+  <table>
+    <thead>
+      <tr>
+        <th>Ativo</th>
+        <th>Código</th>
+        <th>Quantidade</th>
+        <th>Valor Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @currencies.each do |c| %>
+        <tr>
+          <td><%= c.name %></td>
+          <td><%= c.code %></td>
+          <td><%= c.quantity_total %></td>
+          <td></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+    
