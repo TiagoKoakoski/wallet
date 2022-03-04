@@ -1,24 +1,47 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Wallet
 
-Things you may want to cover:
+O aplicativo tem como objetivo gerenciar os investimentos em ativos, inicialmente critomoedas, porém com a perspectiva de adicionar novas funcionalidades.
 
-* Ruby version
+O software utiliza a tecnologia Ruby on Rails
 
-* System dependencies
+## Ruby version 
+```
+Ruby version 3.0.0
+```
+## System dependencies
 
-* Configuration
+```
+gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
 
-* Database creation
+gem 'sqlite3', '~> 1.4'
 
-* Database initialization
+gem 'puma', '~> 5.0'
 
-* How to run the test suite
+gem 'sass-rails', '>= 6'
 
-* Services (job queues, cache servers, search engines, etc.)
+gem 'webpacker', '~> 5.0'
 
-* Deployment instructions
+gem 'turbolinks', '~> 5'
 
-* ...
+gem 'jbuilder', '~> 2.7'
+```
+
+## Configuration
+
+Executar os seguintes comandos:
+
+```
+bin/setup
+
+bundle install
+```
+
+## How to run the test suite
+
+Para realizar os testes executar os comandos:
+
+```
+rspec
+```
